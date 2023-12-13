@@ -4,7 +4,7 @@
 
 FROM ayiinxd/ayiin-userbot:buster
 
-RUN git clone -b Kazu-Userbot https://github.com/Lutpan-Userbot /home/Lutpanuserbot/ \
+RUN git clone -b Lutpan-Userbot https://github.com/Lutpan-Userbot /home/Lutpanuserbot/ \
     && chmod 777 /home/Lutpanuserbot \
     && mkdir /home/Lutpanuserbot/bin/
 
