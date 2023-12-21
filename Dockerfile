@@ -1,16 +1,17 @@
 #==============×==============#
 #      Created by: Alfa-Ex
 #=========× AyiinXd ×=========#
+# Izzy Ganteng
 
-FROM ayiinxd/ayiin-userbot:buster
+FROM ayiinxd/ayiin:xd
 
-RUN git clone -b Lutpan-Userbot https://github.com/Lutpan-Userbot /home/Lutpan-Userbot/ \
-    && chmod 777 /home/Lutpan-Userbot \
-    && mkdir /home/Lutpan-Userbot/bin/
+RUN git clone -b Lutpanstein/Lutpan-Userbot https://github.com/Lutpanstein/Lutpan-Userbot /home//lutpanuserbot/ \
+    && chmod 777 /home/lutpanuserbot \
+    && mkdir /home/lutpanuserbot/bin/
 
-COPY ./sample_config.env ./config.env* /home/Lutpan-Userbot/
+#COPY ./sample.env ./.env* /home/lutpanuserbot/
 
-WORKDIR /home/Lutpan-Userbot/
+WORKDIR /home/lutpanuserbot/
 
 RUN pip install -r requirements.txt
 
